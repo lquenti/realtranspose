@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{realtranspose}
+\usepackage{listings}
+\title{realtranspose v1.0\\The REAL way to transpose a Matrix}
+\author{Lars Quentin}
+
+\begin{document}
+\maketitle
+
+\texttt{realtranspose} is a package for \LaTeX that allows writing a transposition by 
+actually rotating the characters provided. This follows the geometric intuition of a
+matrix transposition. In action, it looks like
+
+\[
+  A^T =: \realtranspose{A}
+\]
+
+It also preserves the math style, for example $\realtranspose{ \sum_{j = 0}^T }$ keeps
+the indizes in text style while
+\[
+\realtranspose{ \sum_{j = 0}^T }
+\]
+has the real display style indizes.
+\subsection*{Installation}
+The only package needed is \texttt{graphicx}. Just install it with
+\begin{lstlisting}
+latex realtranspose.ins
+\end{lstlisting}
+
+\end{document}
+
