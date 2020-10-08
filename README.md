@@ -14,7 +14,7 @@ Now is your time to do it!
 
 ## Usage
 
-It's as easy as 1 succ(1) succ(succ(1))!
+It's as easy as `1 succ(1) succ(succ(1))`!
 ```latex
 \usepackage{realtranspose}
 
