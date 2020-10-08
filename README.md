@@ -24,6 +24,12 @@ A matrix is symmetric iff
 \end{document}
 ```
 
+## Contributing
+
+You have any idea how to extend this joke?
+
+Feel free to either fork it or just open an issue and I'll implement it for you!
+
 ## Acknowledgements
 
 - [realhats](https://github.com/mscroggs/realhats) for the idea and much of the Boilerplate
