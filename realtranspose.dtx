@@ -18,8 +18,36 @@
 %\fi
 
 %\iffalse
-<*realtranspose>
-\NeedsTexFormat{LaTeX2e}
+%<*realtranspose>
+\NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{realtranspose}[2020/10/08 realhats 1.0]
-</realtranspose>
+\RequirePackage{amssymb}
+\RequirePackage{graphicx}
+
+\newcommand{\realtranspose}[1]{
+  % The problem is, that within mathbin it always get's
+  % rendered as textstyle.
+  %
+  % To bypass that, we detect which style was used before
+  %
+  % This way, we can do fun stuff like
+  % 
+  % \int_0^T dt = \realtranspose{ \int_0 } dt
+  %
+  \mathchoice{
+  % displaystyle
+  \mathbin{\rotatebox[origin=c]{90}{$\displaystyle #1$}}
+  }{
+  % textstyle
+  \mathbin{\rotatebox[origin=c]{90}{$\textstyle #1$}}
+  }{
+  % scriptstyle
+  \mathbin{\rotatebox[origin=c]{90}{$\scriptstyle #1$}}
+  }{
+  %scriptscriptstyle
+  \mathbin{\rotatebox[origin=c]{90}{$\scriptscriptstyle #1$}}
+  }
+}
+
+%</realtranspose>
 %\fi
