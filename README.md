@@ -1,6 +1,7 @@
 # realtranspose - The REAL way to transpose Matrix
 
 Update: [Now on CTAN!](https://ctan.org/pkg/realtranspose)
+Update: [Now avaiable for MiKTeX!](https://miktex.org/packages/realtranspose)
 
 Have you ever thought "*I wish mathematical notation would arrive in the 21st century?*"
 
